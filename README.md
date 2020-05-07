@@ -70,14 +70,14 @@ If you want your solution to be benchmarked, add it to the list at the top of [b
 
 ## Similar Projects
 
-|    Language    | Similarity Rating | Generalized |                                                       Link                                                        |
-| :------------: | :---------------: | :---------: | :---------------------------------------------------------------------------------------------------------------: |
-| Research Paper |       ★★★★★       |      ✓      |                   [cs.umb.edu](https://www.cs.umb.edu/~eb/sam/maccabees/backtrackingPaper.pdf)                    |
-| Research Paper |       ★☆☆☆☆       |      ✓      |                         [users.wfu.edu](http://users.wfu.edu/masonsk/scramblesquares.pdf)                         |
-|       C#       |       ★★★☆☆       |      ✓      |    [mheironimus.blogspot.com](https://mheironimus.blogspot.com/2015/01/solving-scramble-squares-puzzles.html)     |
-|       C#       |       ★★★☆☆       |      ✓      | [codeproject.com](https://www.codeproject.com/Articles/815908/Solving-Scramble-Squares-Backtracking-Algorithm-in) |
-|      Ruby      |       ★★★★☆       |             |                        [github.com](https://github.com/mattdsteele/scramblesquares-solver)                        |
-|      Java      |       ★★☆☆☆       |      ✓      |                            [github.com](https://github.com/keilhauer/Legespiel-Solver)                            |
-|     Python     |       ★★★★★       |             |              [gist.github.com](https://gist.github.com/usrlocalben/b7070ece69f7d13bec161dbf5eb7549b)              |
-|       C        |       ★★★☆☆       |      ✓      |                         [sourceforge.net](https://sourceforge.net/projects/crazyturtle/)                          |
-|      Icon      |       ★★☆☆☆       |             |                            [ereimer.net](http://ereimer.net/programs/bird-puzzle.icn)                             |
+|    Language    | Generalized |                                                       Link                                                        |
+| :------------: | :---------: | :---------------------------------------------------------------------------------------------------------------: |
+| Research Paper |      ✓      |                   [cs.umb.edu](https://www.cs.umb.edu/~eb/sam/maccabees/backtrackingPaper.pdf)                    |
+| Research Paper |      ✓      |                         [users.wfu.edu](http://users.wfu.edu/masonsk/scramblesquares.pdf)                         |
+|       C#       |      ✓      |    [mheironimus.blogspot.com](https://mheironimus.blogspot.com/2015/01/solving-scramble-squares-puzzles.html)     |
+|       C#       |      ✓      | [codeproject.com](https://www.codeproject.com/Articles/815908/Solving-Scramble-Squares-Backtracking-Algorithm-in) |
+|      Ruby      |             |                        [github.com](https://github.com/mattdsteele/scramblesquares-solver)                        |
+|      Java      |      ✓      |                            [github.com](https://github.com/keilhauer/Legespiel-Solver)                            |
+|     Python     |             |              [gist.github.com](https://gist.github.com/usrlocalben/b7070ece69f7d13bec161dbf5eb7549b)              |
+|       C        |      ✓      |                         [sourceforge.net](https://sourceforge.net/projects/crazyturtle/)                          |
+|      Icon      |             |                            [ereimer.net](http://ereimer.net/programs/bird-puzzle.icn)                             |
