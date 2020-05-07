@@ -1,6 +1,4 @@
-# vim artifacts
-*.un~
-
 # build artifacts
 build/
 bin/
+.docker_sentinal

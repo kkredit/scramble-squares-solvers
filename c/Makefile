@@ -3,7 +3,6 @@
 # ------------------------------------------------
 
 CC=gcc
-CXX=g++
 
 EXENAME  := puzzle
 SRCDIR   := .
@@ -48,13 +47,13 @@ coverage:
 	genhtml --legend -o $(BUILDDIR)/coveragereport $(EXEFILE).info
 
 $(EXEFILE): $(OBJECTS)
-	$(CXX) -o $@ $(CFLAGS) $^ $(LFLAGS)
+	$(CC) -o $@ $(CFLAGS) $^ $(LFLAGS)
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.c
 	$(CC) -c -o $@ $(CFLAGS) $< $(LFLAGS)
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.cpp
-	$(CXX) -c -o $@ $(CFLAGS) $< $(LFLAGS)
+	$(CC) -c -o $@ $(CFLAGS) $< $(LFLAGS)
 
 $(OBJECTS): | $(BUILDDIR)
 
