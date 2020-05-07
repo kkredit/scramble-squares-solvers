@@ -6,19 +6,19 @@ A puzzle solving program written in a variety of languages. Submit your own solu
 - [Solutions](#solutions)
 - [Submission Guidlelines](#submission-guidlelines)
 - [Benchmarks](#benchmarks)
-- [Outside Solutions](#outside-solutions)
+- [Similar Projects](#similar-projects)
 
 ## The Puzzle
 
-"Scramble Squares" puzzles make good for a fun programming problem.
-<!-- TODO: keep writing -->
+[Scramble Squares](https://www.scramblesquares.com/) puzzles make good for a fun programming problem. The problem small
+enough for a single-file implementation, but complex enough to make you think.
 
-You can find this puzzle [here](https://www.scramblesquares.com/shop/nature/insects-scramble-squares/). The idea is that
-each touching edge must have a complete insect. For example, if you have the head of a beetle on the right edge of the
-left piece, you must have the abdomen of a beetle on the left edge of the right piece. Edges on the perimeter of the
-puzzle do not matter.
+Scramble Squares puzzles consist of nine square pieces that fit together to make a larger 3x3 sqaure. In the solution,
+all interior edges must match.
 
-Here's a picture of what it looks like unsolved:
+This repo contains many solutions to [one particular
+puzzle](https://www.scramblesquares.com/shop/nature/insects-scramble-squares/). In this puzzle, edges contain either the
+head or the tail of one of four insects. Here's a picture of what it looks like unsolved:
 
 <div style="text-align:center">
   <img src="puzzle.jpg" width="500">
@@ -26,16 +26,39 @@ Here's a picture of what it looks like unsolved:
 
 ## Solutions
 
-I have written solutions in five lanugages: C, Clojure, Go, Haskell, and Rust. In invite you to write more!
-<!-- Say a word about more more descriptive writeup -->
+This project is starting with solutions in five lanugages. I originally wrote a solution in C when my primary motivation
+was to solve the puzzle. I added solutions in Clojure, Go, Haskell, and Rust when my motivation was learning new
+languages. You can read a little more about that experience [here](https://github.com/kkredit/scramble-squares-solver).
+
+Solving this problem in new languages was a pleasure. I hope you will share in it by submitting your own solution! If
+you follow the [guidelines below](#submission-guidlelines) and submit a merge request, I will approve it and add your
+solution to the list.
+
+Currently implemented languages:
+
+- C
+- Clojure
+- Go
+- Haskell
+- Rust
 
 ## Submission Guidlelines
 
-<!-- TODO: write some guidelines -->
+Before submitting a solution, please meet the following guidelines:
+
+1. Include a comment at the top of the file with your name and a reference to the CC-1.0 Universal license
+1. Add tooling installation to the Dockerfile (please keep it simple)
+1. Write a Makefile such that produces an executable called `bin/puzzle`
+1. Implement the solution such that it prints between 1-4 (including rotations) solutions in a somewhat readable format
+1. (Optional) Add your solution to the [benchmarking](#benchmarks) script to be included in the table
 
 ## Benchmarks
 
-<!-- TODO: just for fun; comparisons really aren't very fair -->
+These benchmarks are just for fun, as many cross-language comparisons are not fair. [scc](https://github.com/boyter/scc)
+is used for LOC and Complexity measurements. Build time, runtime and memory usage are on whatever machine on which I
+last ran the benchmarking script.
+
+If you want your solution to be benchmarked, add it to the list at the top of [benchmark.sh](benchmark.sh).
 
 | Language | LOC | Complexity | Build time (s) | Exe Size (KB) | 10x Runtime (s) | Mem: RSS (KB) |
 | :------: | :-: | :--------: | :------------: | :-----------: | :-------------: | :-----------: |
@@ -45,7 +68,7 @@ I have written solutions in five lanugages: C, Clojure, Go, Haskell, and Rust. I
 |   rust   | 125 |     18     |      0.95      |     2578      |      0.13       |     2868      |
 | clojure  | 58  |     0      |      7.55      |     3629      |      32.97      |    255240     |
 
-## Outside Solutions
+## Similar Projects
 
 |    Language    | Similarity Rating | Generalized |                                                       Link                                                        |
 | :------------: | :---------------: | :---------: | :---------------------------------------------------------------------------------------------------------------: |
