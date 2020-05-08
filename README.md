@@ -46,11 +46,13 @@ Currently implemented languages:
 
 Before submitting a solution, please meet the following guidelines:
 
-1. Include a comment at the top of the file with your name and a reference to the CC-1.0 Universal license
-1. Add tooling installation to the Dockerfile (please keep it simple)
+1. Include a comment at the top of the file with your name and a reference to the CC0-1.0 Universal license
 1. Write a Makefile such that produces an executable called `bin/puzzle`
-1. Implement the solution such that it prints between 1-4 (including rotations) solutions in a somewhat readable format
-1. (Optional) Add your solution to the [benchmarking](#benchmarks) script to be included in the table
+1. Implement the solution such that it prints 1-4 (including rotations) solutions in a somewhat readable format
+
+For languages that do not produce an executable, `bin/puzzle` may be a shell script that invokes your program. See the
+Clojure solution as an example. Either you or I can update the root Makefile and Dockerfile, and optionally add the
+solution to the benchmarking script.
 
 ## Benchmarks
 
