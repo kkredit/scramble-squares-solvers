@@ -1,22 +1,13 @@
-/**
- * \file puzzle.c
- *
- * \brief Solves a scramble-squares puzzle
- *
- * \author Kevin Kredit (kkredit)
- * \license CC0 1.0 Universal
- */
+// puzzle.c
+// Solves a scramble-squares puzzle using idiomatic C
+// By Kevin Kredit (kkredit)
+// License CC0 1.0 Universal
 
-
-/******************************************************************************
- *                                                                 Inclusions */
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
 
-
-/******************************************************************************
- *                                                                      Types */
+// Types
 typedef enum edge_e {
     ANT_HEAD        = 1,
     ANT_TAIL        = -1,
@@ -30,10 +21,6 @@ typedef enum edge_e {
 
 /* Piece
  *      edge 1
- *    e       e
- *    d       d
- *    g       g
- *    e       e
  *    4       2
  *      edge 3
  */
@@ -52,16 +39,12 @@ typedef struct placed_piece_s {
  */
 typedef placed_piece_t board_t[9];
 
-
-/******************************************************************************
- *                                                      Function declarations */
+// Function declarations
 bool board_is_legal(board_t board, int index);
 void print_board(board_t board);
 void recursive_check(board_t board, int current_index);
 
-
-/******************************************************************************
- *                                                                       Data */
+// Data
 const piece_t pieces_set[9] = {
     {DRAGONFLY_TAIL, ANT_HEAD, BEETLE_TAIL, MANTIS_HEAD},
     {DRAGONFLY_TAIL, ANT_TAIL, BEETLE_HEAD, MANTIS_TAIL},
@@ -76,9 +59,7 @@ const piece_t pieces_set[9] = {
 
 unsigned long num_boards_checked = 0;
 
-
-/******************************************************************************
- *                                                         External functions */
+// Functions
 int main(void) {
 
     board_t board = {
@@ -92,9 +73,6 @@ int main(void) {
     return 0;
 }
 
-
-/******************************************************************************
- *                                                         Internal functions */
 void recursive_check(board_t board, int current_index){
     // Determine which pieces are still available
     bool unplaced_indices[9] = {true, true, true, true, true, true, true, true, true};
