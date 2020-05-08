@@ -4,7 +4,7 @@ A puzzle solving program written in a variety of languages. Submit your own solu
 
 - [The Puzzle](#the-puzzle)
 - [Solutions](#solutions)
-- [Submission Guidlelines](#submission-guidlelines)
+- [Submission Guidelines](#submission-guidelines)
 - [Benchmarks](#benchmarks)
 - [Similar Projects](#similar-projects)
 
@@ -13,7 +13,7 @@ A puzzle solving program written in a variety of languages. Submit your own solu
 [Scramble Squares](https://www.scramblesquares.com/) puzzles make good for a fun programming problem. The problem small
 enough for a single-file implementation, but complex enough to make you think.
 
-Scramble Squares puzzles consist of nine square pieces that fit together to make a larger 3x3 sqaure. In the solution,
+Scramble Squares puzzles consist of nine square pieces that fit together to make a larger 3x3 square. In the solution,
 all interior edges must match.
 
 This repo contains many solutions to [one particular
@@ -26,12 +26,12 @@ head or the tail of one of four insects. Here's a picture of what it looks like 
 
 ## Solutions
 
-This project is starting with solutions in five lanugages. I originally wrote a solution in C when my primary motivation
+This project is starting with solutions in five languages. I originally wrote a solution in C when my primary motivation
 was solving the puzzle. I added solutions in Clojure, Go, Haskell, and Rust when my motivation was learning new
 languages. You can read a little more about that experience [here](https://github.com/kkredit/scramble-squares-solver).
 
 Solving this problem in new languages was a pleasure. I hope you will share in it by submitting your own solution! If
-you follow the [guidelines below](#submission-guidlelines) and submit a merge request, I will approve it and add your
+you follow the [guidelines below](#submission-guidelines) and submit a merge request, I will approve it and add your
 solution to the list.
 
 Currently implemented languages:
@@ -42,7 +42,7 @@ Currently implemented languages:
 - Haskell
 - Rust
 
-## Submission Guidlelines
+## Submission Guidelines
 
 Before submitting a solution, please meet the following guidelines:
 
