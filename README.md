@@ -27,7 +27,7 @@ head or the tail of one of four insects. Here's a picture of what it looks like 
 ## Solutions
 
 This project is starting with solutions in five lanugages. I originally wrote a solution in C when my primary motivation
-was to solve the puzzle. I added solutions in Clojure, Go, Haskell, and Rust when my motivation was learning new
+was solving the puzzle. I added solutions in Clojure, Go, Haskell, and Rust when my motivation was learning new
 languages. You can read a little more about that experience [here](https://github.com/kkredit/scramble-squares-solver).
 
 Solving this problem in new languages was a pleasure. I hope you will share in it by submitting your own solution! If
@@ -46,7 +46,7 @@ Currently implemented languages:
 
 Before submitting a solution, please meet the following guidelines:
 
-1. Include a comment at the top of the file with your name and a reference to the CC0-1.0 Universal license
+1. Include a comment at the top of the file with your name and a reference to the CC0-1.0 license
 1. Write a Makefile such that produces an executable called `bin/puzzle`
 1. Implement the solution such that it prints 1-4 (including rotations) solutions in a somewhat readable format
 
@@ -54,13 +54,23 @@ For languages that do not produce an executable, `bin/puzzle` may be a shell scr
 Clojure solution as an example. Either you or I can update the root Makefile and Dockerfile, and optionally add the
 solution to the benchmarking script.
 
+<!--
+Ideas
+
+- Update benchmark.sh to collect more stats and name champions for each language
+  - code golf (no non-standard libraries)
+  - execution time
+  - memory usage
+- Maybe document all the algorithms employed
+-->
+
 ## Benchmarks
 
 These benchmarks are just for fun, as many cross-language comparisons are not fair. [scc](https://github.com/boyter/scc)
-is used for LOC and Complexity measurements. Build time, runtime and memory usage are on whatever machine on which I
+is used for the LOC and complexity measurements. Build time, runtime and memory usage are on whatever machine on which I
 last ran the benchmarking script.
 
-If you want your solution to be benchmarked, add it to the list at the top of [benchmark.sh](benchmark.sh).
+If you want your solution to be benchmarked, add it to the list at the top of `benchmark.sh`.
 
 | Language | LOC | Complexity | Build time (s) | Exe Size (KB) | 10x Runtime (s) | Mem: RSS (KB) |
 | :------: | :-: | :--------: | :------------: | :-----------: | :-------------: | :-----------: |
@@ -83,3 +93,8 @@ If you want your solution to be benchmarked, add it to the list at the top of [b
 |     Python     |             |              [gist.github.com](https://gist.github.com/usrlocalben/b7070ece69f7d13bec161dbf5eb7549b)              |
 |       C        |      ✓      |                         [sourceforge.net](https://sourceforge.net/projects/crazyturtle/)                          |
 |      Icon      |             |                            [ereimer.net](http://ereimer.net/programs/bird-puzzle.icn)                             |
+
+## License  <!-- omit in toc -->
+
+This project is dedicated to the public domain under the CC0 1.0 Universal license. See [license text](LICENSE) for full
+details.
