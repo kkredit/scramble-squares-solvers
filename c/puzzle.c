@@ -108,13 +108,13 @@ void recursive_check(board_t board, int current_index){
 
 // Only check latest piece
 bool board_is_legal(board_t board, int index){
-    num_boards_checked++;
     bool legal = true;
 
     bool top_row = index < 3;
     bool left_col = 0 == index % 3;
     const piece_t *this_p = &pieces_set[board[index].set_index];
     const int this_r = board[index].rotation;
+    num_boards_checked++;
     if(!top_row) {
         const piece_t *above_p = &pieces_set[board[index - 3].set_index];
         const int above_r = board[index - 3].rotation;
