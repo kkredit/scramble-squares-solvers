@@ -21,7 +21,7 @@ puzzle](https://www.scramblesquares.com/shop/nature/insects-scramble-squares/). 
 head or the tail of one of four insects. Here's a picture of what it looks like unsolved:
 
 <div style="text-align:center">
-  <img src="puzzle.jpg" width="500">
+  <img src="puzzle.gif" width="500">
 </div>
 
 ## Solutions
